@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miguel Faêda · Desenvolvedor Full Stack</title>
+<meta name="description" content="Portfólio de Miguel Faeda, Desenvolvedor Full Stack.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>
+  (function () {
+    var theme = "dark";
+    try { theme = localStorage.getItem("theme") || "dark"; } catch (e) {}
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+  <a class="sidebar-logo" href="index.html">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="12" fill="#1DB954"/><path d="M6 9.5c3.6-1 8-.7 10.8 1 .3.2.4.6.2.9-.2.3-.6.4-.9.2-2.5-1.5-6.4-1.8-9.6-.9-.4.1-.7-.1-.8-.5-.1-.3.1-.6.3-.7Zm-.5 2.8c3-.8 7.2-.6 9.7.9.3.2.4.5.2.8-.2.3-.5.4-.8.2-2.2-1.3-6-1.5-8.6-.8-.3.1-.6-.1-.7-.4-.1-.3.1-.6.2-.7Zm-.4 2.7c2.5-.7 6.4-.5 8.6.8.2.1.3.4.1.6-.1.2-.4.3-.6.1-1.9-1.1-5.4-1.3-7.6-.7-.2.1-.5-.1-.5-.3-.1-.2 0-.4.2-.5Z" fill="#000"/></svg>
+    <span>Mf.</span>
+  </a>
+
+  <nav class="sidebar-nav" aria-label="Navegação principal">
+    <a class="nav-item active" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M4 11.5 12 4l8 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 10v9a1 1 0 0 0 1 1h4v-6h2v6h4a1 1 0 0 0 1-1v-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Início</span>
+    </a>
+    <a class="nav-item" href="sobre.html">
+      <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.4" stroke="currentColor" stroke-width="2"/><path d="M4.5 20c1.4-3.6 4.4-5.6 7.5-5.6s6.1 2 7.5 5.6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span>Sobre</span>
+    </a>
+    <a class="nav-item" href="habilidades.html">
+      <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="12" width="4" height="8" rx="1" stroke="currentColor" stroke-width="2"/><rect x="10" y="7" width="4" height="13" rx="1" stroke="currentColor" stroke-width="2"/><rect x="17" y="3" width="4" height="17" rx="1" stroke="currentColor" stroke-width="2"/></svg>
+      <span>Habilidades</span>
+    </a>
+    <a class="nav-item" href="experiencia.html">
+      <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="7" width="18" height="13" rx="1.5" stroke="currentColor" stroke-width="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" stroke="currentColor" stroke-width="2"/><path d="M3 12h18" stroke="currentColor" stroke-width="2"/></svg>
+      <span>Experiência</span>
+    </a>
+    <a class="nav-item" href="projetos.html">
+      <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="2"/><rect x="13" y="3" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="2"/><rect x="3" y="13" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="2"/><rect x="13" y="13" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="2"/></svg>
+      <span>Projetos</span>
+    </a>
+    <a class="nav-item" href="contato.html">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4V6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Contato</span>
+    </a>
+  </nav>
+
+  <div class="sidebar-divider"></div>
+
+  <div class="sidebar-links">
+    <p class="sidebar-heading">Redes</p>
+    <a class="sidebar-link" href="https://github.com/seu-usuario" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.22-3.37-1.22-.46-1.2-1.11-1.52-1.11-1.52-.9-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.32.1-2.75 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 2.5-.35c.85 0 1.71.12 2.5.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+      <span>GitHub</span>
+    </a>
+    <a class="sidebar-link" href="https://www.linkedin.com/in/seu-usuario" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a1.94 1.94 0 1 1-3.88 0 1.94 1.94 0 0 1 3.88 0ZM3.5 8.75h3.4V21H3.5V8.75Zm6.5 0h3.26v1.68h.05c.45-.86 1.56-1.77 3.22-1.77 3.44 0 4.08 2.27 4.08 5.21V21h-3.4v-5.5c0-1.31-.02-3-1.83-3-1.83 0-2.11 1.43-2.11 2.9V21H10V8.75Z"/></svg>
+      <span>LinkedIn</span>
+    </a>
+    <a class="sidebar-link" href="mailto:seuemail@exemplo.com">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4V6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>E-mail</span>
+    </a>
+  </div>
+</aside>
+
+<div class="app">
+
+  <header class="topbar">
+    <div class="topbar-left">
+      <button class="round-btn theme-toggle" id="theme-toggle" type="button" aria-label="Ativar tema claro" title="Alternar tema claro/escuro">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none"><path d="M20 14.2A8 8 0 0 1 9.8 4a8 8 0 1 0 10.2 10.2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+    <div class="topbar-profile">
+      <div class="avatar-small">MF</div>
+    </div>
+  </header>
+
+  <main class="content" id="content">
+
+    <section class="hero-banner">
+      <div class="hero-art">
+        <div class="avatar-hero">MF</div>
+      </div>
+      <div class="hero-info">
+        
+        <h1 class="hero-title">Miguel Faeda</h1>
+        <p class="hero-role">Desenvolvedor Full Stack</p>
+        <p class="hero-meta"> 16 anos · Belo Horizonte, BR</p>
+        <div class="hero-actions">
+          <a class="btn-play" href="projetos.html">
+            <svg viewBox="0 0 24 24" fill="#000"><path d="M8 5v14l11-7L8 5Z"/></svg>
+            Ver projetos
+          </a>
+          <a class="btn-outline" href="contato.html">Falar comigo</a>
+          <a class="btn-icon" href="https://github.com/faeda-alt" target="_blank" rel="noopener" title="Abrir GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.22-3.37-1.22-.46-1.2-1.11-1.52-1.11-1.52-.9-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.32.1-2.75 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 2.5-.35c.85 0 1.71.12 2.5.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="row-header">
+        <h2 class="row-title">Sobre mim</h2>
+        <a class="row-link" href="sobre.html">Ler a história completa</a>
+      </div>
+      <div class="about-card">
+        <div class="about-intro">
+          <img class="about-photo" src="foto.jpg" alt="Foto de Miguel Faêda" loading="lazy">
+          <div class="about-body">
+            <p class="about-text">
+              Sou o Miguel, desenvolvedor full stack em formação e estudante do 2º ano do ensino
+              médio no Colégio Cotemig Floresta. Gosto de criar páginas claras, bem organizadas e
+              agradáveis de usar, e aprendo na prática com cada projeto.
+            </p>
+          </div>
+        </div>
+<div class="about-facts">
+          <div class="fact"><span class="fact-value">2</span><span class="fact-label">anos de experiência</span></div>
+          <div class="fact"><span class="fact-value">4</span><span class="fact-label">projetos</span></div>
+          
+          <div class="fact"><span class="fact-value">BH</span><span class="fact-label">Belo Horizonte, BR</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="row-header">
+        <h2 class="row-title">Principais habilidades</h2>
+        <a class="row-link" href="habilidades.html">Ver todas</a>
+      </div>
+      <div class="track-list" id="home-skills-preview">
+        <div class="track-row">
+          <span class="col-index">1</span>
+          <div class="track-main">
+            <div class="track-icon">JS</div>
+            <div class="track-name-block">
+              <div class="track-name">JavaScript / TypeScript</div>
+              <div class="track-sub">Linguagem</div>
+            </div>
+          </div>
+          <span class="col-tag">Linguagem</span>
+          <span class="col-level">
+            <span class="level-dots"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span></span>
+            <span class="level-text">Avançado</span>
+          </span>
+        </div>
+        <div class="track-row">
+          <span class="col-index">2</span>
+          <div class="track-main">
+            <div class="track-icon">⚛️</div>
+            <div class="track-name-block">
+              <div class="track-name">React</div>
+              <div class="track-sub">Frontend</div>
+            </div>
+          </div>
+          <span class="col-tag">Frontend</span>
+          <span class="col-level">
+            <span class="level-dots"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span></span>
+            <span class="level-text">Especialista</span>
+          </span>
+        </div>
+        <div class="track-row">
+          <span class="col-index">3</span>
+          <div class="track-main">
+            <div class="track-icon">🟢</div>
+            <div class="track-name-block">
+              <div class="track-name">Node.js</div>
+              <div class="track-sub">Backend</div>
+            </div>
+          </div>
+          <span class="col-tag">Backend</span>
+          <span class="col-level">
+            <span class="level-dots"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span><span class="level-dot"></span></span>
+            <span class="level-text">Intermediário</span>
+          </span>
+        </div>
+        <div class="track-row">
+          <span class="col-index">4</span>
+          <div class="track-main">
+            <div class="track-icon">🎨</div>
+            <div class="track-name-block">
+              <div class="track-name">HTML & CSS</div>
+              <div class="track-sub">Frontend</div>
+            </div>
+          </div>
+          <span class="col-tag">Frontend</span>
+          <span class="col-level">
+            <span class="level-dots"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span></span>
+            <span class="level-text">Especialista</span>
+          </span>
+        </div>
+        <div class="track-row">
+          <span class="col-index">5</span>
+          <div class="track-main">
+            <div class="track-icon">🗄️</div>
+            <div class="track-name-block">
+              <div class="track-name">PostgreSQL</div>
+              <div class="track-sub">Banco de dados</div>
+            </div>
+          </div>
+          <span class="col-tag">Banco de dados</span>
+          <span class="col-level">
+            <span class="level-dots"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span></span>
+            <span class="level-text">Avançado</span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="row-header">
+        <h2 class="row-title">Projetos em destaque</h2>
+        <a class="row-link" href="projetos.html">Ver todos os projetos</a>
+      </div>
+      <div class="album-grid" id="home-projects-preview">
+      <article class="album-card">
+        <div class="album-cover" style="background:linear-gradient(135deg,#1DB954,#0b3f1c)">WC</div>
+        
+        <p class="album-title">Workshop de Carreiras · Colégio Cotemig</p>
+        <p class="album-stack">Workshop · Orientação profissional</p>
+        <p class="album-desc">Participação no Workshop de Carreiras do Colégio Cotemig, voltado à orientação de alunos sobre o mercado de trabalho e escolhas profissionais.</p>
+        <div class="album-links"></div>
+      </article>
+      <article class="album-card">
+        <div class="album-cover album-cover-logo" style="background:linear-gradient(135deg,#3D91F4,#0b2547)"><img src="https://faeda-alt.github.io/susu-figma/F__1_-removebg.png" alt="Logo MF Gems and Jewellery" loading="lazy"><a class="album-play" href="https://faeda-alt.github.io/susu-figma/" target="_blank" rel="noopener" aria-label="Abrir Landing Page MF Gems and Jewellery"><svg viewBox="0 0 24 24" fill="#000"><path d="M8 5v14l11-7L8 5Z"/></svg></a></div>
+        <div class="album-gallery"><img src="https://faeda-alt.github.io/susu-figma/brinco.avif" alt="Peça da coleção de joias" loading="lazy"><img src="https://faeda-alt.github.io/susu-figma/helo.jpg" alt="Peça da coleção de joias" loading="lazy"><img src="https://faeda-alt.github.io/susu-figma/cinto.webp" alt="Peça da coleção de joias" loading="lazy"></div>
+        <p class="album-title">Landing Page · MF Gems and Jewellery</p>
+        <p class="album-stack">HTML · CSS · JavaScript</p>
+        <p class="album-desc">Site institucional e catálogo de uma marca de roupas e joias autorais, com páginas de joias, roupas, kits e contato.</p>
+        <div class="album-links"><a class="album-link" href="https://faeda-alt.github.io/susu-figma/" target="_blank" rel="noopener">Ver site</a></div>
+      </article>
+      <article class="album-card">
+        <div class="album-cover album-cover-ptable" style="background:linear-gradient(135deg,#9b59f6,#2c1a4d)"><div class="ptable-mini"><span style="background:#1DB954">H</span><span style="background:#F4B13D">Li</span><span style="background:#E84393">Be</span><span style="background:#1DB954">C</span><span style="background:#1DB954">N</span><span style="background:#1DB954">O</span><span style="background:#F4B13D">Na</span><span style="background:#E84393">Mg</span><span style="background:#9b59f6">Fe</span><span style="background:#9b59f6">Cu</span><span style="background:#3D91F4">Cl</span><span style="background:#E84393">Ne</span></div><a class="album-play" href="https://faeda-alt.github.io/tabela-periodica/" target="_blank" rel="noopener" aria-label="Abrir Tabela Periódica"><svg viewBox="0 0 24 24" fill="#000"><path d="M8 5v14l11-7L8 5Z"/></svg></a></div>
+        
+        <p class="album-title">Tabela Periódica</p>
+        <p class="album-stack">HTML · CSS</p>
+        <p class="album-desc">Tabela periódica completa e colorida por famílias: metais alcalinos, halogênios, gases nobres, lantanídeos, actinídeos e mais, com massa atômica de cada elemento.</p>
+        <div class="album-links"><a class="album-link" href="https://faeda-alt.github.io/tabela-periodica/" target="_blank" rel="noopener">Ver site</a></div>
+      </article>
+      <article class="album-card">
+        <div class="album-cover" style="background:#222"><img src="https://faeda-alt.github.io/susu-louie/author.jpg" alt="Site Louie Smith" loading="lazy"><a class="album-play" href="https://faeda-alt.github.io/susu-louie/" target="_blank" rel="noopener" aria-label="Abrir Site Louie"><svg viewBox="0 0 24 24" fill="#000"><path d="M8 5v14l11-7L8 5Z"/></svg></a></div>
+        <div class="album-gallery"><img src="https://faeda-alt.github.io/susu-louie/image_1.jpg" alt="Foto do portfólio de Louie" loading="lazy"><img src="https://faeda-alt.github.io/susu-louie/image_2.jpg" alt="Foto do portfólio de Louie" loading="lazy"><img src="https://faeda-alt.github.io/susu-louie/image_3.jpg" alt="Foto do portfólio de Louie" loading="lazy"></div>
+        <p class="album-title">Site Louie</p>
+        <p class="album-stack">HTML · CSS · JavaScript</p>
+        <p class="album-desc">Portfólio de fotografia para Louie Smith, com coleção, blog, serviços, galeria de fotos recentes e formulário de newsletter.</p>
+        <div class="album-links"><a class="album-link" href="https://faeda-alt.github.io/susu-louie/" target="_blank" rel="noopener">Ver site</a></div>
+      </article>
+    </div>
+    </section>
+
+    <section class="cta-band">
+      <div>
+        <h2 class="row-title">Vamos construir algo juntos?</h2>
+        <p class="about-text" style="margin:0">Estou disponível para novos projetos freelance e oportunidades.</p>
+      </div>
+      <a class="btn-play" href="contato.html">
+        <svg viewBox="0 0 24 24" fill="#000"><path d="M8 5v14l11-7L8 5Z"/></svg>
+        Entrar em contato
+      </a>
+    </section>
+
+  </main>
+</div>
+
+<footer class="now-playing">
+  <div class="np-info">
+    <div class="np-avatar">MF</div>
+    <div class="np-text">
+      <strong>Miguel Faeda</strong>
+      <small>Desenvolvedor Full Stack · Disponível para novas oportunidades</small>
+    </div>
+  </div>
+
+  <div class="np-status">
+    <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <span class="np-status-text">Aberto a propostas freelance e CLT</span>
+  </div>
+
+  <div class="np-contacts">
+    <a href="mailto:miguellfaeda@gmail.com" title="E-mail" aria-label="Enviar e-mail"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4V6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a href="https://github.com/faeda-alt" target="_blank" rel="noopener" title="GitHub" aria-label="Abrir GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.22-3.37-1.22-.46-1.2-1.11-1.52-1.11-1.52-.9-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.32.1-2.75 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 2.5-.35c.85 0 1.71.12 2.5.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg></a>
+    <a href="https://www.linkedin.com/in/miguel-faeda-4826aa39a/?isSelfProfile=true" target="_blank" rel="noopener" title="LinkedIn" aria-label="Abrir LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a1.94 1.94 0 1 1-3.88 0 1.94 1.94 0 0 1 3.88 0ZM3.5 8.75h3.4V21H3.5V8.75Zm6.5 0h3.26v1.68h.05c.45-.86 1.56-1.77 3.22-1.77 3.44 0 4.08 2.27 4.08 5.21V21h-3.4v-5.5c0-1.31-.02-3-1.83-3-1.83 0-2.11 1.43-2.11 2.9V21H10V8.75Z"/></svg></a>
+  </div>
+</footer>
+
+<nav class="mobile-nav" aria-label="Navegação móvel">
+  <a class="mobile-nav-item active" href="index.html">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M4 11.5 12 4l8 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 10v9a1 1 0 0 0 1 1h4v-6h2v6h4a1 1 0 0 0 1-1v-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>Início</span>
+  </a>
+  <a class="mobile-nav-item" href="sobre.html">
+    <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.4" stroke="currentColor" stroke-width="2"/><path d="M4.5 20c1.4-3.6 4.4-5.6 7.5-5.6s6.1 2 7.5 5.6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    <span>Sobre</span>
+  </a>
+  <a class="mobile-nav-item" href="habilidades.html">
+    <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="12" width="4" height="8" rx="1" stroke="currentColor" stroke-width="2"/><rect x="10" y="7" width="4" height="13" rx="1" stroke="currentColor" stroke-width="2"/><rect x="17" y="3" width="4" height="17" rx="1" stroke="currentColor" stroke-width="2"/></svg>
+    <span>Habilidades</span>
+  </a>
+  <a class="mobile-nav-item" href="experiencia.html">
+    <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="7" width="18" height="13" rx="1.5" stroke="currentColor" stroke-width="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" stroke="currentColor" stroke-width="2"/><path d="M3 12h18" stroke="currentColor" stroke-width="2"/></svg>
+    <span>Experiência</span>
+  </a>
+  <a class="mobile-nav-item" href="projetos.html">
+    <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="2"/><rect x="13" y="3" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="2"/><rect x="3" y="13" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="2"/><rect x="13" y="13" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="2"/></svg>
+    <span>Projetos</span>
+  </a>
+  <a class="mobile-nav-item" href="contato.html">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4V6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>Contato</span>
+  </a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
