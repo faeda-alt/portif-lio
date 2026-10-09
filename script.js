@@ -25,8 +25,8 @@ const DATA = {
   ],
 
   education: [
-    { degree: "Bacharelado em Ciência da Computação", institution: "Universidade Exemplo", period: "2018 — 2022" },
-    { degree: "Formação em Desenvolvimento Web Full Stack", institution: "Escola Exemplo", period: "2020" },
+    { degree: "Colégio Adventista Concórdia", period: "2015 - 2019" },
+    { degree: "Colégio Elite Floresta", period: "2020 - 2024" },
   ],
 
   languages: [
@@ -35,7 +35,7 @@ const DATA = {
     { name: "Espanhol", level: 2 },
   ],
 
-  emailForContactForm: "seuemail@exemplo.com",
+  emailForContactForm: "miguellfaeda@gmail.com",
 };
 
 
@@ -75,7 +75,7 @@ function renderAboutPage() {
     eduList.innerHTML = DATA.education.map((e) => `
       <div class="edu-item">
         <strong>${e.degree}</strong>
-        <span>${e.institution} · ${e.period}</span>
+        <span>${e.period}</span>
       </div>
     `).join("");
   }
